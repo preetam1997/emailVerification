@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class EmailValidator {
 	public static void Validator(String s) {
 		
-		 String regex = "^([a-z A-Z 0-9]+)([a-z A-Z 0-9 .!#$%&'*+/=?^_`{|}~-]*)$";
+		 String regex = "^([a-z A-Z 0-9]+)([a-z A-Z 0-9 .!#$%&'*+/=?^_`{|}~-]*)@([a-z A-Z]{2-20})$";
 	     
 	      boolean result = Pattern.matches(regex,s);
 	      if(result) {
